@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaStudio | Digital Agency</title>
+  <meta name="description" content="A modern, responsive digital agency website demo.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Nova<span>Studio.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <div class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a class="btn btn-purple ms-lg-2" href="#contact">Let's Talk ↗</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <div class="eyebrow"><span class="dot"></span> CREATIVE DIGITAL AGENCY</div>
+          <h1>We build digital<br>experiences that<br><span>stand out.</span></h1>
+          <p class="hero-text">We help brands grow with modern websites, thoughtful design, and digital solutions built around their goals.</p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a class="btn btn-purple btn-lg" href="#contact">Start a Project ↗</a>
+            <a class="btn btn-outline-light btn-lg" href="#services">Explore Services</a>
+          </div>
+          <div class="stats row mt-5 g-3">
+            <div class="col-4"><strong>Modern</strong><small>Design Approach</small></div>
+            <div class="col-4"><strong>Responsive</strong><small>Across Devices</small></div>
+            <div class="col-4"><strong>Creative</strong><small>Digital Solutions</small></div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="visual-card">
+            <div class="visual-top"><span>✳ NOVA / CREATIVE</span><span>2026</span></div>
+            <div class="orb"></div>
+            <div class="visual-caption">
+              <small>DESIGN THAT MOVES YOU</small>
+              <h2>Think bold.<br>Build better.</h2>
+            </div>
+            <div class="visual-footer">STRATEGY · DESIGN · DEVELOPMENT</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="services">
+      <div class="section-heading">
+        <div><div class="eyebrow">WHAT WE DO</div><h2>Our Services</h2></div>
+        <p>Digital solutions designed to help your business move forward.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <article class="service-card">
+            <div class="service-icon">✳</div>
+            <h3>Web Design</h3>
+            <p>Beautiful and user-friendly website layouts that make a memorable first impression.</p>
+            <a href="#contact">Explore service ↗</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="service-card">
+            <div class="service-icon">⌘</div>
+            <h3>Development</h3>
+            <p>Responsive frontend experiences built with HTML, CSS, Bootstrap, and JavaScript.</p>
+            <a href="#contact">Explore service ↗</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="service-card">
+            <div class="service-icon">↗</div>
+            <h3>Digital Strategy</h3>
+            <p>Thoughtful digital experiences tailored to a brand's goals and audience.</p>
+            <a href="#contact">Explore service ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="about-panel row align-items-center g-4">
+        <div class="col-lg-7">
+          <div class="eyebrow">ABOUT NOVASTUDIO</div>
+          <h2>Good design is more than how it looks.</h2>
+          <p>It's how it works, how it feels, and how it helps people reach their goals. We combine creativity with practical frontend development to create useful digital experiences.</p>
+        </div>
+        <div class="col-lg-5">
+          <div class="about-note"><span>01</span><div><strong>Thoughtful Design</strong><p>Clear layouts and consistent visual style.</p></div></div>
+          <div class="about-note"><span>02</span><div><strong>Responsive Development</strong><p>Layouts designed for mobile, tablet, and desktop.</p></div></div>
+          <div class="about-note"><span>03</span><div><strong>Detail-Oriented Work</strong><p>Careful attention to usability and presentation.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <div class="contact-panel text-center">
+        <div class="eyebrow justify-content-center">HAVE A PROJECT IN MIND?</div>
+        <h2>Let's create something<br><span>remarkable.</span></h2>
+        <p>Tell us a little about your project and let's start a conversation.</p>
+        <form id="contactForm" class="contact-form mx-auto">
+          <input class="form-control" id="name" placeholder="Your name" required>
+          <input class="form-control" id="email" type="email" placeholder="Your email" required>
+          <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your project" required></textarea>
+          <button class="btn btn-purple btn-lg w-100" type="submit">Prepare Message ↗</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <a class="navbar-brand fw-bold" href="#">Nova<span>Studio.</span></a>
+    <p>© <span id="year"></span> NovaStudio. Portfolio demo project.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
